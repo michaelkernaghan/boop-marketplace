@@ -87,6 +87,7 @@ class App extends Component {
           <img src={logo} alt="logo" style={{ maxWidth: '150px' }} />
         </div>
         <Navbar account={this.state.account} />
+        <p className="mt-2 note">Hit refresh if the page does not complete loading.</p>
         <div className="container-fluid mt-5">
           <div className="row">
             <main role="main" className="col-lg-12 d-flex">

@@ -16,7 +16,7 @@ module.exports = {
       provider: () => new HDWalletProvider(mnemonic, `https://node.ghostnet.etherlink.com`),
       network_id: 128123, // Chain ID for Etherlink Testnet
       gas: 5500000, // Gas limit used for transactions
-      gasPrice: 21000000000,
+      //gasPrice: 21000000000,
       timeoutBlocks: 200, // Number of blocks before a deployment times out
       skipDryRun: true // Skip dry run before migrations? Up to you
     }
