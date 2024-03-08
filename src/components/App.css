@@ -1,5 +1,99 @@
-/* Styles go here */
-.note {
-    color: #666; /* Adjust the color as needed */
-    font-size: 0.9rem; /* Adjust the font size as needed */
+/* Resetting margin, padding, and box-sizing for consistency */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background: linear-gradient(to right, #0052D4, #65C7F7, #9CECFB); /* Exciting gradient background */
+  color: #333;
+  line-height: 1.6;
+  padding-top: 56px; /* Space for fixed navbar */
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Montserrat', sans-serif;
+  margin-bottom: 1rem;
+  color: #FFD700; /* Gold for contrast and attention */
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+/* Navbar styles */
+.navbar {
+  background-color: #007BFF; /* Blue */
+  border-bottom: 3px solid #FFD700; /* Gold */
+}
+
+.navbar-brand,
+.nav-item {
+  color: #FFD700 !important; /* Gold */
+}
+
+/* Note and loading message styling */
+.note,
+#loader p {
+  color: #ffffff; /* Making text visible on gradient background */
+  font-size: 1rem;
+}
+
+/* Button styles */
+.btn {
+  background-color: #FFD700; /* Gold */
+  color: #007BFF; /* Blue */
+  border: none;
+}
+
+.btn:hover,
+.btn:focus {
+  background-color: #ffc107; /* Lighter gold */
+  color: #FFF;
+}
+
+/* Form input styling */
+.form-control {
+  border-radius: 0.25rem;
+  border: 1px solid #FFD700; /* Gold */
+}
+
+/* Table styles */
+.table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.table th,
+.table td {
+  text-align: left;
+  padding: 8px;
+}
+
+.table th {
+  background-color: #007BFF; /* Blue */
+  color: white;
+}
+
+.table tbody tr:nth-child(odd) {
+  background-color: #f2f2f2;
+}
+
+.table tbody tr:hover {
+  background-color: #ddd;
+}
+
+/* Footer or additional sections */
+.text-center {
+  margin-top: 20px;
+}
+
+/* Adjustments for images */
+img {
+  border-radius: 8px;
 }

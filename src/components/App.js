@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Web3 from 'web3'
 import logo from '../logo.png';
+import boopsImage from '../boops-image.png';
 import './App.css';
 import Marketplace from '../abis/Marketplace.json'
 import Navbar from './Navbar'
@@ -100,6 +101,9 @@ class App extends Component {
               }
             </main>
           </div>
+        </div>
+        <div className="text-center mb-4">
+          <img src={require('../boops-image.png')} alt="Boops" style={{ maxWidth: '100%', maxHeight: '300px' }} />
         </div>
       </div>
     );
