@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import Web3 from 'web3'
 import logo from '../logo.png';
-import boopsImage from '../boops-image.png';
 import './App.css';
 import Marketplace from '../abis/Marketplace.json'
 import Navbar from './Navbar'
