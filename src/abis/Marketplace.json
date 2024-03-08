@@ -832,9 +832,9 @@
                       "subdenomination": null,
                       "typeDescriptions": {
                         "typeIdentifier": "t_stringliteral_da4b6052d4e2657e92b9e8ac7ae34efe0016cdd765c6837ed00d7314b2dd8f36",
-                        "typeString": "literal_string \"Dapp University Marketplace\""
+                        "typeString": "literal_string \"BOOP Marketplace\""
                       },
-                      "value": "Dapp University Marketplace"
+                      "value": "BOOP Marketplace"
                     },
                     "src": "623:36:0",
                     "typeDescriptions": {
