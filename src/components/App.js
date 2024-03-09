@@ -87,10 +87,7 @@ class App extends Component {
           <img src={logo} alt="logo" style={{ maxWidth: '150px' }} />
         </div>
         <Navbar account={this.state.account} />
-        <p className="mt-2 note">Be patient or refresh to prompt the wallet if the page does not load well.</p>
-        <p className="mt-2 note">Working in Windows - Metamask in Chrome and Firefox does not estimate gas, preventing Buys.</p>
-        <p className="mt-2 note">The contract was compiled with Truffle, which I have been told is deprecated</p>
-        <p className="mt-2 note">This may explain Metamask's griping.</p>
+        <p className="mt-2 note">Be patient or refresh to prompt the wallet if the page does not load well. Errors are handled silently.</p>
         <div className="container-fluid mt-5">
           <div className="row">
             <main role="main" className="col-lg-12 d-flex">

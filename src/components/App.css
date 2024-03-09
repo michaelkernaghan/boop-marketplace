@@ -188,3 +188,7 @@ img {
 .footer li {
   margin: 5px 0;
 }
+
+.table .sold-item {
+  background-color: #f76868 !important; /* Light shade of red */
+}
