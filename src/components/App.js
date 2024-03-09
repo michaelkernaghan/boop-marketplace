@@ -87,7 +87,8 @@ class App extends Component {
           <img src={logo} alt="logo" style={{ maxWidth: '150px' }} />
         </div>
         <Navbar account={this.state.account} />
-        <p className="mt-2 note">Hit refresh if the page does not complete loading.</p>
+        <p className="mt-2 note">Be patient or refresh to prompt the wallet if the page does not load well.</p>
+        <p className="mt-2 note">Working in Windows - Metamask in Chrome and Firefox does not estimate gas, preventing Buys.</p>
         <div className="container-fluid mt-5">
           <div className="row">
             <main role="main" className="col-lg-12 d-flex">

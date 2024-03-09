@@ -19,8 +19,9 @@ body {
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Montserrat', sans-serif;
   margin-bottom: 1rem;
-  color: #FFD700; /* Gold for contrast and attention */
+  color: #FFFFFF; /* Changed to white for better visibility */
 }
+
 
 p {
   margin-bottom: 1rem;
@@ -37,11 +38,24 @@ p {
   color: #FFD700 !important; /* Gold */
 }
 
-/* Note and loading message styling */
-.note,
-#loader p {
-  color: #ffffff; /* Making text visible on gradient background */
-  font-size: 1rem;
+.note {
+  color: #FFFFFF; /* White text for better contrast */
+  background-color: #007BFF; /* Using the primary blue for background */
+  border: 1px solid #FFD700; /* Gold border for attention */
+  padding: 20px;
+  margin: 20px auto; /* Centering horizontally */
+  max-width: 80%; /* Adjust based on your design preference */
+  border-radius: 10px; /* Softened corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Slight shadow for depth */
+  text-align: center; /* Ensures the text is centered */
+  font-weight: bold; /* Makes the text bold */
+}
+
+.container-note {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100px; /* Adjust based on your needs */
 }
 
 /* Button styles */
@@ -67,25 +81,38 @@ p {
 .table {
   border-collapse: collapse;
   width: 100%;
+  background-color: rgba(255, 255, 255, 0.9); /* Light background with slight transparency */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adding shadow for depth */
+  margin: 20px 0; /* Add some spacing around the table */
 }
 
 .table th,
 .table td {
   text-align: left;
-  padding: 8px;
+  padding: 12px;
 }
 
 .table th {
-  background-color: #007BFF; /* Blue */
+  background-color: #007BFF; /* Blue, for header */
   color: white;
+  position: sticky;
+  top: 0; /* Make the header stick to the top when scrolling */
 }
 
 .table tbody tr:nth-child(odd) {
-  background-color: #f2f2f2;
+  background-color: rgba(255, 215, 0, 0.5); /* Alternating rows with gold color and transparency */
+}
+
+.table tbody tr:nth-child(even) {
+  background-color: rgba(255, 255, 255, 0.7); /* Alternating rows with white color and more transparency */
 }
 
 .table tbody tr:hover {
-  background-color: #ddd;
+  background-color: rgba(220, 220, 220, 0.8); /* Hover effect */
+}
+
+.table tbody td {
+  border-bottom: 1px solid #ddd; /* Add bottom border to each cell for better separation */
 }
 
 /* Footer or additional sections */
@@ -96,4 +123,68 @@ p {
 /* Adjustments for images */
 img {
   border-radius: 8px;
+}
+
+.add-product-form {
+  max-width: 600px; /* Adjust based on your preference */
+  margin: 0 auto; /* Centers the form */
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.8); /* Optional: Background to distinguish the form */
+  border-radius: 10px; /* Optional: Adds rounded corners for aesthetics */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Adds a subtle shadow for depth */
+}
+
+/* Styling for the inputs within the form */
+.add-product-form input[type="text"],
+.add-product-form input[type="number"] {
+  width: 100%; /* Makes the input fill the container */
+  padding: 10px; /* Adds some padding inside the inputs */
+  margin: 8px 0; /* Adds some space between inputs */
+  box-sizing: border-box; /* Ensures padding doesn't increase the input's size */
+  border: 1px solid #ccc; /* A light border for the inputs */
+  border-radius: 5px; /* Slightly rounded borders for the inputs */
+}
+
+/* Styling for the submit button to match the form style */
+.add-product-form button[type="submit"] {
+  background-color: #007BFF; /* Primary color */
+  color: white; /* Text color */
+  padding: 10px 20px; /* Padding for the button */
+  border: none; /* Removes the border */
+  border-radius: 5px; /* Rounded corners for the button */
+  cursor: pointer; /* Changes the cursor to indicate it's clickable */
+}
+
+.add-product-form button[type="submit"]:hover {
+  background-color: #0056b3; /* Darker shade for hover effect */
+}
+
+.add-product-heading {
+  color: #f1bc0a; /* White for better visibility */
+}
+
+/* Footer styles */
+.footer {
+  background-color: #007BFF; /* Blue */
+  color: #FFFFFF; /* White */
+  text-align: center;
+  padding: 20px 0;
+}
+
+.footer a {
+  color: #FFD700; /* Gold */
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+.footer ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.footer li {
+  margin: 5px 0;
 }
